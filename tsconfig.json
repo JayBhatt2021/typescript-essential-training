@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "allowJs": true, // allows JS files in project
+        "checkJs": true, // checks for errors in JS files
+        "noEmit": true, // determines whether NOT to emit the outputted JS files
+        "outDir": "build", // destination of the outputted JS files
+        "target": "ESNext" // JS language version for the outputted JS files
+    },
+    "include": ["src/**/*"] // files to be included for the project
+}
