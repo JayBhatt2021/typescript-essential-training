@@ -9,14 +9,14 @@ b = "Hello";
 b = 1234;
 
 // Custom Types
-interface Contact extends Address {
+export interface Contact extends Address {
   id: number;
   name: ContactName;
   birthDate?: Date; // optional
   status: ContactStatus;
 }
 
-interface Address {
+export interface Address {
   line1: string;
   line2: string;
   state: string;
@@ -25,10 +25,10 @@ interface Address {
 }
 
 // Type Alias
-type ContactName = string;
+export type ContactName = string;
 
 // Enumerations
-enum ContactStatus {
+export enum ContactStatus {
   Active = "active",
   Inactive = "inactive",
   New = "new",
