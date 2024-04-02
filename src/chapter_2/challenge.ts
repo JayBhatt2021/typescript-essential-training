@@ -28,7 +28,7 @@ const thirdTodo: Todo = {
   status: TodoStatus.TODO,
 };
 
-const todoItems = [firstTodo, secondTodo, thirdTodo];
+const todoItems: Todo[] = [firstTodo, secondTodo, thirdTodo];
 
 function addTodoItem(todoTitle: string): Todo {
   const id = getNextId(todoItems);
@@ -48,7 +48,7 @@ function getNextId<T extends { id: number }>(items: T[]): number {
   return items.reduce((max, x) => (x.id > max ? x.id : max), 0) + 1;
 }
 
-const newTodo = addTodoItem(
+const newTodo: Todo = addTodoItem(
   "Buy lots of stuff with all the money we make from the app"
 );
 
