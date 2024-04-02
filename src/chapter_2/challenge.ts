@@ -31,7 +31,7 @@ const thirdTodo: Todo = {
 const todoItems: Todo[] = [firstTodo, secondTodo, thirdTodo];
 
 function addTodoItem(todoTitle: string): Todo {
-  const id = getNextId(todoItems);
+  const id: number = getNextId(todoItems);
 
   const newTodo: Todo = {
     id,
