@@ -1,5 +1,5 @@
 // Record<Keys, Type>
-let x: Record<string, string | number | boolean | Function> = {
+export let x: Record<string, string | number | boolean | Function> = {
   name: "Bruce Wayne", // string type
 };
 x.number = 1234; // number type
@@ -8,7 +8,7 @@ x.log = () => console.log("awesome!"); // Function type
 
 ////////////////////
 
-type ContactStatus = "active" | "inactive" | "new";
+export type ContactStatus = "active" | "inactive" | "new";
 
 interface Address {
   street: string;
@@ -30,9 +30,11 @@ interface Query {
 
 // Partial<T>: Make all properties in T optional
 // Pick<T, K extends keyof T>: From T, pick a set of properties whose keys are in the union K
-type ContactQuery = Partial<Pick<Record<keyof Contact, Query>, "id" | "name">>;
+export type ContactQuery = Partial<
+  Pick<Record<keyof Contact, Query>, "id" | "name">
+>;
 
-function searchContacts(contacts: Contact[], query: ContactQuery) {
+export function searchContacts(contacts: Contact[], query: ContactQuery) {
   return contacts.filter((contact) => {
     for (const property of Object.keys(contact) as (keyof Contact)[]) {
       // get the query object for this property
@@ -47,7 +49,7 @@ function searchContacts(contacts: Contact[], query: ContactQuery) {
   });
 }
 
-const filteredContacts = searchContacts(
+export const filteredContacts = searchContacts(
   [
     /* contacts */
   ],
