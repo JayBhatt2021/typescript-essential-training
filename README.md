@@ -19,9 +19,9 @@ In this course, Jess Chadwick teaches you how to leverage the full power of the 
 
 Jess Chadwick
 
-Full-Stack Web Developer
+- Full-Stack Web Developer
 
-Check out his other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/jess-chadwick).
+- Check out his other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/jess-chadwick).
 
 [lil-course-url]: https://www.linkedin.com/learning/typescript-essential-training-14687057
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2428199/2428199-1647545390894-16x9.jpg
