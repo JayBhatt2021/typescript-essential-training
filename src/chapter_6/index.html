@@ -1,7 +1,13 @@
 <html>
   <head>
-    <script type="text/javascript" src="utils.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- JS modules facilitate linking code distributed across multiple files. -->
+    <!-- Each JS module operates within its own memory space. -->
+    <script type="text/javascript" src="utils.ts"></script>
+    <script type="text/javascript" src="app.ts"></script>
+
+    <!-- Eliminating the need to load all application files upfront, JS modules allow -->
+    <!-- the browser to load them on demand. -->
+    <script type="module" src="app.ts"></script>
   </head>
 
   <body></body>
