@@ -6,7 +6,8 @@
         "outDir": "build", // destination of the outputted JS files
         "target": "ESNext", // JS language version for the outputted JS files
         "experimentalDecorators": true, // enables experimental support for specific decorators
-        "emitDecoratorMetadata": true // emits design-type metadata for decorated declarations in source files
+        "emitDecoratorMetadata": true, // emits design-type metadata for decorated declarations in source files
+        "module": "CommonJS" // specifies what module code is generated
     },
     "include": ["src/**/*"] // files to be included for the project
 }
